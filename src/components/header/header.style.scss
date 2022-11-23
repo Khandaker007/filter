@@ -4,8 +4,10 @@
 
 .header {
   height: 20vh;
-  background: $color-secondary;
+  position: absolute;
+  width: 100%;
 
+  background: $color-secondary;
   @include itemCenter;
 
   h1 {

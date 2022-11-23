@@ -4,13 +4,76 @@
 
 .footer {
   background-color: $color-green-dark;
-  height: 50vh;
+  padding-inline: 20rem;
+  padding-top: 20rem;
+  padding-bottom: 4.5rem;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  &__container {
+    display: flex;
+    gap: 15rem;
+    justify-content: space-between;
 
-  h1 {
-    color: white;
+    &--left {
+      .logo-container {
+        height: 16.4rem;
+        margin-bottom: 6rem;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: contain;
+          object-position: left;
+        }
+      }
+      .description {
+        font-size: 2.3rem;
+        color: $text-color-white;
+      }
+    }
+    .vl {
+      border-left: 2px solid $color-primary;
+    }
+    &--right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .social-media {
+        font-size: 5rem;
+        color: $color-primary;
+        margin-bottom: 7rem;
+
+        display: flex;
+        justify-content: space-between;
+        gap: 4rem;
+      }
+      .contact {
+        color: $text-color-white;
+        h4 {
+          font-size: 3.8rem;
+          margin-bottom: 2rem;
+        }
+        p {
+          font-size: 2rem;
+
+          &:nth-child(4) {
+            margin-bottom: 2rem;
+          }
+        }
+      }
+    }
+  }
+  &__copywrite {
+    margin-top: 11rem;
+
+    display: flex;
+    justify-content: space-between;
+
+    span {
+      font-size: 2rem;
+      color: $color-primary;
+
+      &:nth-child(2) {
+        font-weight: 700;
+      }
+    }
   }
 }
