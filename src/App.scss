@@ -1,5 +1,12 @@
 .filter-app {
+  height: 100vh;
+  background-color: #009344;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
+  h1 {
+    color: white;
+  }
 }
