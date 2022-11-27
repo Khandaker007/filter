@@ -1,0 +1,61 @@
+@import "../../../sass/mixins.scss";
+@import "../../../sass/typography.scss";
+@import "../../../sass/variables.scss";
+
+.hero {
+  position: relative;
+  height: 100vh;
+  padding-top: 20vh;
+  padding-inline: 20rem;
+  background-image: url(../../../assets/images/hero/cover.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+
+  .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($color: black, $alpha: 0.7);
+  }
+  &__content {
+    position: relative;
+    z-index: 111;
+    h1 {
+      color: $color-secondary;
+      margin-bottom: 5rem;
+
+      span {
+        display: block;
+      }
+      span:nth-child(2) {
+        text-align: right;
+      }
+    }
+    h2 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: $text-color-white;
+    }
+  }
+  &__image {
+    position: relative;
+    z-index: 111;
+    height: 55rem;
+    aspect-ratio: 1;
+    border-radius: 1.6rem;
+    overflow: hidden;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}

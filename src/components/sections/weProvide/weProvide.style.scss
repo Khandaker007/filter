@@ -1,0 +1,20 @@
+@import "../../../sass/mixins.scss";
+@import "../../../sass/typography.scss";
+@import "../../../sass/variables.scss";
+
+.we-provide {
+  padding-inline: 20rem;
+  padding-bottom: 10rem;
+  .grid-container {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    .box {
+      height: 38.9rem;
+      border-radius: 1.6rem;
+      background-color: aquamarine;
+      @include itemCenter;
+    }
+  }
+}

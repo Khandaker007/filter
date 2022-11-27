@@ -3,12 +3,4 @@
 @import "../../sass/variables.scss";
 
 .home {
-  display: flex;
-  height: 100vh;
-
-  @include itemCenter;
-
-  h1 {
-    color: $text-color-yellow;
-  }
 }

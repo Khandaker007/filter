@@ -1,0 +1,9 @@
+@import "../../../sass/mixins.scss";
+@import "../../../sass/typography.scss";
+@import "../../../sass/variables.scss";
+
+.achievements {
+  height: 100vh;
+  @include itemCenter;
+  background-color: paleturquoise;
+}

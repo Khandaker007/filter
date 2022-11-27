@@ -1,0 +1,47 @@
+@import "../../../sass/mixins.scss";
+@import "../../../sass/typography.scss";
+@import "../../../sass/variables.scss";
+
+.common-card {
+  position: relative;
+
+  height: 38.9rem;
+  border-radius: 1.6rem;
+  overflow: hidden;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .mask {
+    background-color: rgba($color: #000000, $alpha: 0.4);
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .type {
+    padding: 1rem 3rem;
+    border: 3px solid white;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+
+    position: absolute;
+    z-index: 111;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    span {
+      font-size: 3.5rem;
+      color: $text-color-white;
+      white-space: nowrap;
+      display: block;
+      text-align: center;
+    }
+    span:nth-child(2) {
+      font-size: 2rem !important;
+    }
+  }
+}

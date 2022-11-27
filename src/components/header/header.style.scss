@@ -4,13 +4,63 @@
 
 .header {
   height: 20vh;
-  position: absolute;
   width: 100%;
+  padding-inline: 20rem;
+  position: absolute;
+  z-index: 111;
 
-  background: $color-secondary;
-  @include itemCenter;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content 1fr;
 
-  h1 {
-    color: white;
+  &__contact {
+    font-size: 1.8rem;
+    padding-top: 2rem;
+
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+
+    span {
+      color: $text-color-yellow;
+
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    span:nth-child(1) {
+      a {
+        text-decoration: none;
+        color: $text-color-yellow;
+      }
+    }
+  }
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo-container {
+      height: 9.5rem;
+      width: 19.9rem;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+    .nav {
+      display: flex;
+      gap: 4rem;
+      &__item {
+        font-size: 2rem;
+        font-weight: 700;
+        list-style: none;
+      }
+      &__link {
+        text-decoration: none;
+        color: $text-color-white;
+      }
+    }
   }
 }

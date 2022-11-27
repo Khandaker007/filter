@@ -1,0 +1,61 @@
+@import "../../../sass/mixins.scss";
+@import "../../../sass/typography.scss";
+@import "../../../sass/variables.scss";
+
+.what-we-do {
+  position: relative;
+  padding: 20rem;
+
+  display: flex;
+  gap: 5rem;
+  .layout {
+    height: 46.4rem;
+    width: 69.4rem;
+
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+  &__images {
+    flex: 1;
+    .img-container {
+      position: relative;
+      height: 57.9rem;
+      width: 52rem;
+      border-radius: 1.6rem;
+      .img-big {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      .img-container {
+        height: 45rem;
+        width: 31.9rem;
+        border-radius: 1.6rem;
+        border: 10px solid white;
+
+        position: absolute;
+        top: 21.5rem;
+        right: -10rem;
+        .img-small {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  &__content {
+    flex: 1;
+    p {
+      font-size: 2.9rem;
+      margin-top: 10rem;
+    }
+  }
+}
