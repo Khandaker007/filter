@@ -23,6 +23,20 @@ function Sliders(props) {
     appendArrows: ".slider-arrow",
     nextArrow: <SliderButton type="next" />,
     prevArrow: <SliderButton type="prev" />,
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 430,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   return (

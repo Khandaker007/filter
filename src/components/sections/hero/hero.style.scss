@@ -16,6 +16,14 @@
   justify-content: space-between;
   gap: 5rem;
 
+  @include response(tab-port) {
+    flex-direction: column;
+    justify-content: center;
+  }
+  @include response(s-phone) {
+    padding-inline: 5rem;
+  }
+
   .mask {
     position: absolute;
     top: 0;

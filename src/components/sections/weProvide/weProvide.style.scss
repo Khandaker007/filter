@@ -5,11 +5,22 @@
 .we-provide {
   padding-inline: 20rem;
   padding-bottom: 10rem;
+
+  @include response(s-phone) {
+    padding-inline: 5rem;
+  }
   .grid-container {
     margin-top: 3rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+
+    @include response(tab-port) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include response(s-phone) {
+      grid-template-columns: 1fr;
+    }
     .box {
       height: 38.9rem;
       border-radius: 1.6rem;

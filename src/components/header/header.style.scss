@@ -13,6 +13,10 @@
   grid-template-columns: 1fr;
   grid-template-rows: min-content 1fr;
 
+  @include response(s-phone) {
+    padding-inline: 5rem;
+  }
+
   &__contact {
     font-size: 1.8rem;
     padding-top: 2rem;
@@ -52,6 +56,10 @@
     .nav {
       display: flex;
       gap: 4rem;
+
+      @include response(s-phone) {
+        display: none;
+      }
       &__item {
         font-size: 2rem;
         font-weight: 700;

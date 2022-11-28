@@ -5,6 +5,9 @@
 .achievements {
   padding: 10rem 20rem 20rem 20rem;
 
+  @include response(s-phone) {
+    padding-inline: 5rem;
+  }
   .grid-box {
     margin-top: 3rem;
     display: grid;
@@ -12,17 +15,38 @@
     grid-template-rows: repeat(2, [row-start] max-content [row-end]);
     gap: 4%;
 
+    @include response(s-phone) {
+      grid-template-columns: [col-start] 1fr [col-end];
+      grid-template-row: repeat(3, [row-start] max-content [row-end]);
+      gap: 5rem;
+    }
+
     .card-1 {
       grid-column: col-left-start / col-left-end;
       grid-row: row-start 1 / row-end 1;
+
+      @include response(s-phone) {
+        grid-column: col-start / col-end;
+        grid-row: row-start 1 / row-end 1;
+      }
     }
     .card-2 {
       grid-column: col-left-start / col-left-end;
       grid-row: row-start 2 / row-end 2;
+
+      @include response(s-phone) {
+        grid-column: col-start / col-end;
+        grid-row: row-start 2 / row-end 2;
+      }
     }
     .card-3 {
       grid-column: col-right-start / col-right-end;
       grid-row: row-start 1 / row-end 2;
+
+      @include response(s-phone) {
+        grid-column: col-start / col-end;
+        grid-row: row-start 3 / row-end 3;
+      }
     }
 
     .achievement-card {

@@ -8,6 +8,14 @@
 
   display: flex;
   gap: 5rem;
+
+  @include response(tab-port) {
+    flex-direction: column-reverse;
+  }
+  @include response(s-phone) {
+    padding: 10rem 5rem;
+  }
+
   .layout {
     height: 46.4rem;
     width: 69.4rem;
@@ -24,6 +32,13 @@
   }
   &__images {
     flex: 1;
+
+    @include response(tab-port) {
+      align-self: center;
+    }
+    @include response(s-phone) {
+      align-self: flex-start;
+    }
     .img-container {
       position: relative;
       height: 57.9rem;

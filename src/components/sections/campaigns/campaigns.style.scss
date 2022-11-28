@@ -5,7 +5,14 @@
 .campaigns {
   padding: 10rem 14.45rem;
 
+  @include response(s-phone) {
+    padding-inline: 5rem;
+  }
   .heading {
     margin-left: 5.55rem;
+
+    @include response(s-phone) {
+      margin-left: 0;
+    }
   }
 }
