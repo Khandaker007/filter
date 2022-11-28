@@ -15,10 +15,14 @@ function Home(props) {
   return (
     <div className="home">
       <Hero />
+      <div id="about"></div>
       <WhatWeDo />
+      <div id="services"></div>
       <WeCollect />
       <WeProvide />
+      <div id="campaigns"></div>
       <Campaigns />
+      <div id="achievements"></div>
       <Achievements />
     </div>
   );

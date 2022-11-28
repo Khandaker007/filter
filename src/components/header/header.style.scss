@@ -13,6 +13,9 @@
   grid-template-columns: 1fr;
   grid-template-rows: min-content 1fr;
 
+  // test
+  // background-color: aquamarine;
+  // height: 100vh;
   @include response(s-phone) {
     padding-inline: 5rem;
   }
@@ -44,6 +47,8 @@
     justify-content: space-between;
     align-items: center;
 
+    // position: relative;
+
     .logo-container {
       height: 9.5rem;
       width: 19.9rem;
@@ -53,22 +58,90 @@
         object-fit: contain;
       }
     }
+    .burger-menu {
+      @media screen and (min-width: 600px) {
+        display: none;
+      }
+      .burger-btn {
+        overflow: visible;
+        cursor: pointer;
+        fill: $color-secondary;
+
+        &--1,
+        &--2,
+        &--3 {
+          transition: 0.2s;
+          transform-origin: center center;
+        }
+
+        &.active {
+          // opacity: 0;
+          .burger-btn--1 {
+            transform: translate(-7px, 7px) rotate(45deg);
+          }
+          .burger-btn--2 {
+            transform: translateX(20px);
+            opacity: 0;
+          }
+          .burger-btn--3 {
+            transform: translate(-7px, -7px) rotate(-45deg);
+          }
+        }
+      }
+    }
     .nav {
       display: flex;
       gap: 4rem;
 
-      @include response(s-phone) {
-        display: none;
+      @media screen and (max-width: 600px) {
+        flex-direction: column;
+        padding: 5rem 5rem 10rem 5rem;
+        width: 100%;
+        transition: all 0.2s;
+        height: 80vh;
+
+        position: absolute;
+        top: 25rem;
+        left: -100%;
+        z-index: 999;
+
+        align-items: center;
+        justify-content: flex-start;
+      }
+
+      .bg-blur {
+        @media screen and (max-width: 600px) {
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          background-color: rgba(0, 0, 0, 0.9);
+        }
       }
       &__item {
         font-size: 2rem;
         font-weight: 700;
         list-style: none;
+
+        @include response(phone) {
+          font-size: 3.5rem;
+          position: relative;
+          z-index: 999;
+        }
       }
       &__link {
         text-decoration: none;
         color: $text-color-white;
+
+        &:hover {
+          color: $color-secondary;
+          border-bottom: 2px solid $color-secondary;
+        }
       }
+    }
+    .open {
+      left: 0;
     }
   }
 }

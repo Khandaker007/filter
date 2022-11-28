@@ -34,7 +34,7 @@
   }
   &__content {
     position: relative;
-    z-index: 111;
+    z-index: 1;
     h1 {
       color: $color-secondary;
       margin-bottom: 5rem;
@@ -54,7 +54,7 @@
   }
   &__image {
     position: relative;
-    z-index: 111;
+    z-index: 1;
     height: 55rem;
     aspect-ratio: 1;
     border-radius: 1.6rem;
