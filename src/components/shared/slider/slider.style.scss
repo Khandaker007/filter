@@ -1,0 +1,16 @@
+@import "../../../sass/mixins.scss";
+@import "../../../sass/typography.scss";
+@import "../../../sass/variables.scss";
+
+.slider {
+  margin-top: 2rem;
+
+  .slick-slider {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    .slick-list {
+      padding-right: 20%;
+    }
+  }
+}

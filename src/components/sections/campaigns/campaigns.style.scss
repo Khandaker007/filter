@@ -3,7 +3,9 @@
 @import "../../../sass/variables.scss";
 
 .campaigns {
-  height: 50vh;
-  @include itemCenter;
-  background-color: palegreen;
+  padding: 10rem 14.45rem;
+
+  .heading {
+    margin-left: 5.55rem;
+  }
 }

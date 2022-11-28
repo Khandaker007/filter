@@ -3,7 +3,58 @@
 @import "../../../sass/variables.scss";
 
 .achievements {
-  height: 100vh;
-  @include itemCenter;
-  background-color: paleturquoise;
+  padding: 10rem 20rem 20rem 20rem;
+
+  .grid-box {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: [col-left-start] 58% [col-left-end col-right-start] 38% [col-right-end];
+    grid-template-rows: repeat(2, [row-start] max-content [row-end]);
+    gap: 4%;
+
+    .card-1 {
+      grid-column: col-left-start / col-left-end;
+      grid-row: row-start 1 / row-end 1;
+    }
+    .card-2 {
+      grid-column: col-left-start / col-left-end;
+      grid-row: row-start 2 / row-end 2;
+    }
+    .card-3 {
+      grid-column: col-right-start / col-right-end;
+      grid-row: row-start 1 / row-end 2;
+    }
+
+    .achievement-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .img-container {
+        height: 100%;
+        border-radius: 1.6rem;
+        overflow: hidden;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      .details {
+        .title {
+          display: block;
+          font-size: 4rem;
+          color: $text-color-green;
+          // margin-top: 3rem;
+
+          span {
+            display: block;
+          }
+        }
+        .desc {
+          font-size: 2rem;
+          color: $text-color-green;
+        }
+      }
+    }
+  }
 }

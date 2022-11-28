@@ -1,0 +1,19 @@
+@import "../../../sass/mixins.scss";
+@import "../../../sass/typography.scss";
+@import "../../../sass/variables.scss";
+
+.btn {
+  aspect-ratio: 1;
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: 2px solid $text-color-green;
+  background-color: transparent;
+  cursor: pointer;
+
+  @include itemCenter;
+
+  .icon {
+    font-size: 1.5rem;
+    color: $text-color-green;
+  }
+}
