@@ -53,11 +53,16 @@
         height: 45rem;
         width: 31.9rem;
         border-radius: 1.6rem;
-        border: 10px solid white;
+        border: 1rem solid white;
 
         position: absolute;
         top: 21.5rem;
         right: -10rem;
+
+        @include response(phone) {
+          right: -6rem;
+          border: 1.2rem solid white;
+        }
         .img-small {
           height: 100%;
           width: 100%;
