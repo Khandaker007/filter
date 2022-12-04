@@ -6,7 +6,7 @@
   padding: 10rem 20rem 20rem 20rem;
 
   @include response(s-phone) {
-    padding-inline: 5rem;
+    padding: 5rem;
   }
   .grid-box {
     margin-top: 3rem;
