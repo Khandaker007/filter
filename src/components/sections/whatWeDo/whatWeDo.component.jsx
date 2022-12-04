@@ -19,7 +19,7 @@ function WhatWeDo(props) {
       <div className="layout">
         <img src={layout} alt="layout" />
       </div>
-      <div className="what-we-do__images">
+      <div className="what-we-do__images" data-aos="fade-right">
         <div className="img-container">
           <img className="img-big" src={imgBig} alt="big-img" />
           <div className="img-container">
@@ -27,7 +27,7 @@ function WhatWeDo(props) {
           </div>
         </div>
       </div>
-      <div className="what-we-do__content">
+      <div className="what-we-do__content" data-aos="fade-left">
         <PointHeading text="What We Do" />
         <p>
           FILTER is a technology-based door to door waste management company

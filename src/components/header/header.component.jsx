@@ -95,15 +95,6 @@ function Header(props) {
               Achievements
             </a>
           </li>
-          <li className="nav__item">
-            <a
-              href="#blog"
-              className="nav__link"
-              onClick={() => setMenuOpen(false)}
-            >
-              Blog
-            </a>
-          </li>
         </ul>
       </div>
     </div>

@@ -18,7 +18,7 @@ import "./weCollect.style.scss";
 function WeCollect(props) {
   return (
     <div className="we-collect">
-      <PointHeading text="We Collect" />
+      <PointHeading text="We Collect" data-aos="fade-right" />
       <div className="grid-container">
         <CommonCard img={plastic} tag="Plastic" />
         <CommonCard img={paper} tag="Paper" />

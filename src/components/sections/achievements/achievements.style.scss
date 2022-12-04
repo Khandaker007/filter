@@ -18,7 +18,7 @@
     @include response(s-phone) {
       grid-template-columns: [col-start] 1fr [col-end];
       grid-template-row: repeat(3, [row-start] max-content [row-end]);
-      gap: 5rem;
+      gap: 0;
     }
 
     .card-1 {
@@ -28,6 +28,7 @@
       @include response(s-phone) {
         grid-column: col-start / col-end;
         grid-row: row-start 1 / row-end 1;
+        margin-bottom: 5rem;
       }
     }
     .card-2 {
@@ -37,6 +38,7 @@
       @include response(s-phone) {
         grid-column: col-start / col-end;
         grid-row: row-start 2 / row-end 2;
+        margin-bottom: 5rem;
       }
     }
     .card-3 {

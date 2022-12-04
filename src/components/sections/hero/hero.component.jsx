@@ -11,14 +11,14 @@ function Hero(props) {
   return (
     <div className="hero">
       <div className="mask"></div>
-      <div className="hero__content">
+      <div className="hero__content" data-aos="fade-right">
         <h1>
           <span>Waste is</span>
           <span>Resource</span>
         </h1>
         <h2>Recycle, Reuse, Resource, Sustainable, life</h2>
       </div>
-      <div className="hero__image">
+      <div className="hero__image" data-aos="fade-left">
         <img src={heroImage} alt="hero" />
       </div>
     </div>

@@ -16,7 +16,7 @@ function Achievements(props) {
     <div className="achievements">
       <PointHeading text="Achievements" />
       <div className="grid-box">
-        <div className="achievement-card card-1">
+        <div className="achievement-card card-1" data-aos="fade-right">
           <div className="img-container">
             <img src={img1} alt="" />
           </div>
@@ -30,7 +30,7 @@ function Achievements(props) {
             </span>
           </div>
         </div>
-        <div className="achievement-card card-2">
+        <div className="achievement-card card-2" data-aos="fade-right">
           <div className="img-container">
             <img src={img2} alt="" />
           </div>
@@ -43,7 +43,7 @@ function Achievements(props) {
             </span>
           </div>
         </div>
-        <div className="achievement-card card-3">
+        <div className="achievement-card card-3" data-aos="fade-left">
           <div className="img-container">
             <img src={img3} alt="" />
           </div>
